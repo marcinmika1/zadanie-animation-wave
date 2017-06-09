@@ -1,3 +1,40 @@
+body{
+    text-align: center;
+}
+
 div#logo{
+    display: inline-block;
     background: red;
+    width: 500px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    color:white;
+    
+    
+}
+
+div#wave{
+    position: absolute;
+    display: inline-block;
+    background: red;
+    width: 100px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    font-size: 30px; 
+    opacity: 0.8;
+    left: 0px;
+    box-shadow: 0px -1px 103px 12px red;
+    animation-name: animation-wave;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes animation-wave{
+    from{left:0px;}
+    to{left:400px}
 }
